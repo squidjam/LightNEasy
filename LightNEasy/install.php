@@ -90,7 +90,7 @@ if(function_exists('sqlite_escape_string')) {
 //	$ok=false;
 }
 print "</td></tr>\n<tr><td>Checking SQLite 3 ...</td>";
-if(defined(SQLITE3_ASSOC)) {
+if(defined('SQLITE3_ASSOC')) {
 	$res=SQLite3::version();
 	print "<td style=\" color: #00ff00; \">Installed, version ".$res['versionString'];
 } else {
