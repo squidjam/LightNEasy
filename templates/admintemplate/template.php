@@ -24,10 +24,6 @@
 				<div id="sidebar">
 					<ul>
 						<li>$#loginform#$</li>
-						<p></p>
-						<iframe id="the_iframe" frameborder="0" scrolling="auto" width="100%" height="410" src="http://www.lightneasy.org/LightNEasy/lastnews.php">
-						An iframe capable browser is required to view this web site
-						</iframe>
 					</ul>
 				</div>
 				<!-- end #sidebar -->
