@@ -781,16 +781,16 @@ function opendb() {
 
 function dbquery($query) {
 	global $sqldbdb, $MySQL;
-	if($MySQL) {
-		$result = @mysql_query($query,$sqldbdb) or die(mysql_error());
-		return $result;
-	} elseif($MySQL==0) {
-		$result = @sqlite_query($sqldbdb,$query);
+	if($MySQL==0) {
+		$result = sqlite_query($sqldbdb,$query);
 		if (!$result) {
 			print sqlite_error_string(sqlite_last_error($sqldbdb));
 			return false;
 		} else return $result;
-	} else {
+	} elseif($MySQL==1) {
+		$result = mysql_query($query,$sqldbdb) or die(mysql_error());
+		return $result;
+	} elseif($MySQL==2) {
 		$result = $sqldbdb->query($query);
 		if (!$result) {
 			print $sqldbdb->lastErrorMsg();
