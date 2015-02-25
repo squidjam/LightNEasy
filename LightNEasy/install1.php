@@ -24,7 +24,7 @@
 <h1 style="text-align: center;"><br />Install</h1>
 <div style="background: #f0f0f0; padding-left: 30px; padding-top: 10px; color: #000;">
 <?php
-if($_POST['submit'] == "Create Database") {
+if(isset($_POST['submit'])&&$_POST['submit'] == "Create Database") {
 unset($_POST['submit']);
 if($_POST['password']!="" && $_POST['password1']!="" && $_POST['password']==$_POST['password1']) {
 $pass=sha1($_POST['password']);
