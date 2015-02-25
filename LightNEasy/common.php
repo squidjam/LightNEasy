@@ -799,6 +799,7 @@ function dbquery($query) {
 			return $result;
 		}
 	}
+	else exit('DB type not found');
 }
 
 function convertRGB($color) {
