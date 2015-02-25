@@ -198,7 +198,11 @@ function entryform() { ?>
 <tr><td>Admin email:</td><td><input type="text" name="email" value="" /></td></tr>
 <tr><td>Website email:</td><td><input type="text" name="wemail" value="" /></td></tr>
 <tr><td>Tables prefix:</td><td><input type="text" name="prefix" value="LNE_" /></td></tr>
-<tr><td>Database system:</td><td><select name="database" ><option value="SQLite2">SQLite 2 (following fields empty)</option><option value="SQLite3">SQLite 3 (following fields empty)</option><option value="MySQL">MySQL</option></select></td></tr>
+<tr><td>Database system:</td><td><select name="database" >
+<?php if(function_exists('mysql_connect')):?><option value="MySQL">MySQL</option><?php endif;?>
+<?php if(function_exists('sqlite_escape_string')):?><option value="SQLite2">SQLite 2 (following fields empty)</option><?php endif;?>
+<?php if(defined('SQLITE3_ASSOC')):?><option value="SQLite3">SQLite 3 (following fields empty)</option><?php endif;?>
+</select></td></tr>
 <tr><td>Database name:</td><td><input type="text" name="databasename" value="" /></td></tr>
 <tr><td>MySQL login:</td><td><input type="text" name="databaselogin" value="" /></td></tr>
 <tr><td>MySQL password:</td><td><input type="text" name="databasepassword" value="" /></td></tr>
