@@ -254,7 +254,7 @@
 					} else {
 						$class= " alert";
 						$text = "<h5>There were errors in your configuration</h5>\n
-						<div class=\"text-center\"><span class\"alert label\">Please correct the permissions and run install again</span>\n
+						<div class=\"text-center\"><span class=\"alert label\">Please correct the permissions and run install again</span>\n
 						</div>";
 					}
 					?>
