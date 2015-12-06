@@ -5,7 +5,7 @@
 | http://www.lightNEasy.org
 +----------------------------------------------------+
 | Install module install.php
-| Version 3.2.5 SQLite/MySQL
+| Version 3.3.0 SQLite/MySQL
 +----------------------------------------------------+
 | Released under the terms & conditions of v2 of the
 | GNU General Public License. For details refer to
@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
-		<title>LightNEasy 3.2.5 Install - 1</title>
+		<title>LightNEasy 3.3.0 Install - 1</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
