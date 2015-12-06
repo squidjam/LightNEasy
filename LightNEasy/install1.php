@@ -175,7 +175,7 @@
 				echo "<h4>Installation Successfull!</h4>\n
 				<hr>\n
 				<p>You should make sure the files install.php and install1.php inside LightNEasy folder were deleted, for security reasons.</p>\n
-				<p align=\"center\"><a href=\"../LightNEasy.php\">Start LightNEasy!</a></p>\n";
+				<div class=\"text-center\"><a class=\"success button\" href=\"../LightNEasy.php\">Start LightNEasy!</a></div>\n";
 				} else {
 					echo "<h4>Please try Again!</h4>\n
 					<hr>\n
