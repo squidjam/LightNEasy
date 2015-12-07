@@ -136,7 +136,7 @@ div.f_search {
 }
 
 #LNE_admin {
-	width: 82px;
+	/*width: 82px;*/
 	float: right;
 	padding-right: 10px;
 }
@@ -263,4 +263,3 @@ div.f_search {
 #lightbox a img{
 	border: none;
 }
-
